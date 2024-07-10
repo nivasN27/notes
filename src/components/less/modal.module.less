@@ -1,0 +1,97 @@
+.modalContainer{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/shareUrTaughts.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    .modal{
+        border-radius: 1em;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 1em 2em;
+        position: relative;
+        .title{
+            font-size: 2em;
+            margin: .5em 0;
+        }
+        .textArea{
+            width: 40em;
+            height: 10em;
+            font-size: 1.2em;
+        }
+        .btnContainer{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1em;
+            margin-top: .8em;
+            button{
+                padding: .5em 1em;
+                border-radius: .6em;
+                border: none;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+            .cancelBtn{
+                background: rgb(239, 43, 43);
+            }
+            .addBtn{
+                background: rgb(0, 200, 255);
+            }
+            .uploadIcon{
+                height: 2em;
+                background-color: white;
+                border-radius: 1em;
+                cursor: pointer;
+            }
+        }
+        .uploadedImgContainer{
+            position: absolute;
+            bottom: .5em;
+            max-width: 23em;
+            max-height: 5em;
+            overflow: hidden;
+            overflow-x: scroll;
+            background-color: white;
+            border-radius: .5em;
+            display: flex;
+            .uploadedImgwrapper{
+                position: relative;
+                .uploadedImg{
+                    max-width: 3em;
+                    height: 2em;
+                    padding: .5em;
+                }
+                .deleteIcon{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: .8em;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+            }
+        }
+        .uploadedImgContainer::-webkit-scrollbar {
+            width: 20px; 
+            height: .3em;
+        }
+        .uploadedImgContainer::-webkit-scrollbar-thumb {
+            background: gray; 
+            border-radius: 10px; 
+            cursor: pointer;
+        }
+        .lightuploadedImgContainer::-webkit-scrollbar-thumb{
+            background: black;
+        }
+    }
+    .lightModal{
+        background-color: white;
+        color: black;
+    }
+}

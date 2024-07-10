@@ -1,0 +1,45 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/images/notesBg.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  
+    overflow-y: scroll;
+    .btnContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        border: 2px solid black;
+        border-radius: 1em;
+        padding: 1em;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        margin-top: 2em;
+
+        .btnContent{
+            font-size: 2em;
+            margin: 0 !important;
+        }
+        .btnIcon{
+            width: 2em;
+        }
+    }
+    .btnContainer:hover{
+        transform: scale(1.2);
+    }
+    .themeIconWrapper{
+        position: absolute;
+        top: 2em;
+        right: 3em;
+        .themeIcon{
+            width: 2.5em;
+            border-radius: 1em;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    .contentWrapper{
+        position: relative;
+        background-color: rgb(18, 18, 18);
+        box-shadow: 5px 5px 15px;
+        border: 1px solid;
+        max-width: 13em;
+        min-width: 4em;
+        border-radius: 1em;
+        margin: 1em;
+        padding: .5em .5em .5em;
+        transition: transform 0.2s ease;
+        .actionContainer{
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            display: flex;
+            gap: .5em;
+            visibility: hidden;
+            .deleteIcon{
+                height: 1em;
+                cursor: pointer;
+            }
+            .editIcon{
+                width: 1em;
+                cursor: pointer;    
+            }
+        }
+        .textContainer{
+            align-content: center;
+            text-align: center;
+            p, a{
+                color: white !important;
+                word-wrap: break-word ; 
+                overflow-wrap: break-word;
+                white-space: normal;
+            }
+            a{
+                text-decoration: none !important;
+            }
+            a:hover{
+                color:  rgb(0, 179, 255) !important;
+            }
+        }
+        .imgContent{
+            width: 3em;
+        }
+    }
+    .contentWrapper:hover{
+        transform: scale(1.1);
+        .actionContainer{
+            visibility: visible;
+        }
+    }
+    .lightContentWrapper{
+        background-color: white;
+        .textContainer{
+            p, a{
+                color: black !important;
+            }
+        }
+    }
+}
