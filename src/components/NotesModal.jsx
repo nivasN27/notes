@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import uploadImg from "../assets/images/uploadIcon.webp";
 import deleteIcon from "../assets/images/deleteIcon.webp";
 import closeIcon from "../assets/images/closeIcon.webp";

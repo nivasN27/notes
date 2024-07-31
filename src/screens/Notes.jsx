@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import NotesModal from "../components/NotesModal";
 import plusIcon from "../assets/images/plusIcon.webp";
 import deleteIcon from "../assets/images/deleteIcon.webp";
@@ -49,7 +49,7 @@ const Notes = () => {
     setNoteList(updatedNotes);
   };
 
-  const renderContent = (obj, index) => {
+  const renderContent = (obj) => {
     return (
       <div
         className={style.content}
